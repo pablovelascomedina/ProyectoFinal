@@ -3,10 +3,10 @@
 void menuHelp()
 {
   system("clear");
-  printf("\n\t\t\t   A Y U D A \n");
-  printf("\t\t\t----------------\n\n");
-  printf("         Este programa   manipula la base de datos de aseguradora\n");
-  printf("     dependiendo lo que ingrese el usuario, hare dichas funciones \n\n");
+  printf("\n\t\t\t\t\t\t\t A Y U D A \n");
+  printf("\t\t\t\t\t\t----------------------\n\n");
+  printf("\t Este programa \n");
+
   printf("\t\t   E S P E C I F I C A C I O N E S\n");
   printf("\t\t---------------------------------------\n");
   printf("\n\t\t   1- Ingresar la Base de datos a utilizar\n");

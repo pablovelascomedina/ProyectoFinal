@@ -15,9 +15,9 @@ int main(int argc, char const *argv[]) {
     printf("\t\t\t\t     M e n u      d e      O p c  i o n e s \n\n");
     printf("\t\t\t\t  --------------------------------------------\n");
     printf("\t\t\t\t\t\tDesarrollado por:\n\n");
-    printf(" \t\t\t\t\t Diana Laura Aviles Elizalde\n" );
-    printf(" \t\t\t\t\t Diego Patricio Gutierrez Lopez Cano\n" );
-    printf(" \t\t\t\t\t Juan Pablo Velasco Medina\n" );
+    printf(" \t\t\t\t\tDiana Laura Aviles Elizalde\n" );
+    printf(" \t\t\t\t\tDiego Patricio Gutierrez Lopez Cano\n" );
+    printf(" \t\t\t\t\tJuan Pablo Velasco Medina\n" );
     printf("\t\t\t\t  --------------------------------------------\n");
     printf("\t\t |                                                                             |\n");
     printf("\t\t |  1.  Ayuda                                                                  |\n");
