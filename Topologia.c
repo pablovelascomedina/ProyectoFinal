@@ -2,5 +2,6 @@
 
 void topologia()
 {
-printf("Aqui se realiza la topologia");
+  system("clear");
+printf("Realizado por: Diana Laura Aviles Elizalde");
 }
