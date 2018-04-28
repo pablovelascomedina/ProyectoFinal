@@ -1,1 +1,1 @@
-//algoritmo topología
+#include "funcionesGenerales"

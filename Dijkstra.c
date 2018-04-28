@@ -24,7 +24,7 @@ int main(int argc, char const *argv[]) {
     printf("\t\t |  2.  Generar topología                                                      |\n");
     printf("\t\t |  3.  Crear las tablas de ruteo                                              |\n");
     printf("\t\t |  4.  Mostrar la lista de nodos de la red                                    |\n");
-    printf("\t\t |  5.  Salir                                                               |\n");
+    printf("\t\t |  5.  Salir                                                                   |\n");
     printf("\t\t |                                                                             |\n\n");
     printf("\t\t\t\tIngresar opcion: ");
     scanf("%s",opcion);
@@ -34,13 +34,26 @@ int main(int argc, char const *argv[]) {
         valida=1;
         validationError(valida);
         getchar();
+        getchar();
       }
   } while(sscanf(opcion, "%d", &opcionMenu) != 1);  //2 hasta ingresarlo bien se repetira
 
-    system("clear");
-     printf("hola");
 
-} while(opcionMenu!>=5);//1
+    switch (opcionMenu) {
+      case 1:
+     menuHelp();
+      break;
+
+      case 2:
+      topologia();
+      break;
+
+    default:
+      system("clear");
+      printf("INGRESE UNA OPCION CORRECTA\n");
+    }
+
+} while(opcionMenu<=5);//1
 
   return 0;
 }
