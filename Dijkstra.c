@@ -24,8 +24,9 @@ int main(int argc, char const *argv[]) {
     printf("\t\t |  2.  Generar topología                                                      |\n");
     printf("\t\t |  3.  Crear las tablas de ruteo                                              |\n");
     printf("\t\t |  4.  Mostrar la lista de nodos de la red                                    |\n");
-    printf("\t\t |  5.  Salir                                                                    |\n");
-    printf("\t\t |                                                                             |\n\n");
+    printf("\t\t |  5.  Salir                                                                  |\n");
+    printf("\t\t |                                                                             |\n");
+      printf("\t\t\t\t  --------------------------------------------\n\n");
     printf("\t\t\t\tIngresar opcion: ");
     scanf("%s",opcion);
 
