@@ -3,3 +3,6 @@
 #include<string.h>
 
 int validationError(int valida);
+void topologia();
+void ruteo();
+void direccionamiento();

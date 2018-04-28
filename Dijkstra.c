@@ -24,7 +24,7 @@ int main(int argc, char const *argv[]) {
     printf("\t\t |  2.  Generar topología                                                      |\n");
     printf("\t\t |  3.  Crear las tablas de ruteo                                              |\n");
     printf("\t\t |  4.  Mostrar la lista de nodos de la red                                    |\n");
-    printf("\t\t |  5.  Salir                                                                   |\n");
+    printf("\t\t |  5.  Salir                                                                    |\n");
     printf("\t\t |                                                                             |\n\n");
     printf("\t\t\t\tIngresar opcion: ");
     scanf("%s",opcion);
@@ -42,10 +42,24 @@ int main(int argc, char const *argv[]) {
     switch (opcionMenu) {
       case 1:
      menuHelp();
+     getchar();
       break;
 
       case 2:
       topologia();
+      break;
+
+      case 3:
+      ruteo();
+      break;
+
+      case 4:
+      direccionamiento();
+      break;
+
+      case 5:
+      printf("BYE\n");
+      exit(0);
       break;
 
     default:
