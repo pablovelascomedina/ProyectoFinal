@@ -59,7 +59,7 @@ int main(int argc, char const *argv[]) {
       break;
 
       case 5:
-      printf("BYE\n");
+      printf("HASTA LUEGO VUELVA PRONTO\n");
       exit(0);
       break;
 

@@ -13,7 +13,7 @@ void menuHelp()
   printf(" \t\t\t\t\t\t   Diana Laura Aviles Elizalde\n" );
   printf(" \t\t\t\t\t\tDiego Patricio Gutierrez Lopez Cano\n" );
   printf(" \t\t\t\t\t\t   Juan Pablo Velasco Medina\n\n\n" );
-  printf("\t\t\t\t\t\tPresiona Enter para continuar [ ]\n");
+  printf("\t\t\t\t\t\tPresiona Enter para continuar [  ]\n");
   getchar();
 
 }
