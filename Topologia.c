@@ -12,7 +12,7 @@ void topologia()
   int costo;
   DATOS *inicio, *auxiliar, *nodo;
   char separador[]=":";
-     char *cadena;
+  char *cadena;
 
   system("clear");
   printf("\t\t\tRealizado por: Diana Laura Aviles Elizalde\n\n");
@@ -32,11 +32,11 @@ void topologia()
       //leer renglon por renglon
       while (fgets(renglon,maxNumCaracToRead,topologia)!=NULL)
 	{
-    cadena= strtok(renglon,separador);
-while (cadena != NULL){
-   printf("%s ",cadena);
-   cadena = strtok(NULL,separador);
-}
+	  cadena= strtok(renglon,separador);
+	  while (cadena != NULL){
+	    printf("%s ",cadena);
+	    cadena = strtok(NULL,separador);
+	  }
 	  //Guardar datos del renglo origen:Destino:Costo
 	  if(scanf(cadena,"%s %s %d",or,de,&costo)==3) //valida que ten
 	    {
