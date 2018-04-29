@@ -28,8 +28,13 @@ int validationError(int valida)
       system("clear"); //validacion de argumentos
       printf("\n\n\tIngreso mal su opcion,intentelo de nuevo\n");
     break;
+    case 2:
+      system("clear"); //validacion de argumentos
+      printf("\n\n\t\t\t\t\t\t     No existe el archivo\n");
+        printf("\t\t\t\t\t\tPresiona Enter para continuar [  ]\n");
+    break;
 
-  default://algo hiciste mal.
-    printf("MAL\n");
+  default:
+    printf("ERROR\n");
   }
 }

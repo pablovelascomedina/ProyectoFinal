@@ -10,10 +10,17 @@ typedef struct topologiatxt{
     struct topologiatxt *siguiente;
 }DATOS;
 
+//Menu de Ayuda
+void menuHelp();
+
+ //imprime los errores
 int validationError(int valida);
+
 /*funciones topología*/
 void topologia();
+
 /*funciones ruteo*/
 void ruteo();
+
 /*funciones  direccionamiento*/
 void direccionamiento();
