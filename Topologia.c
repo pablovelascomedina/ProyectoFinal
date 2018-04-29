@@ -30,7 +30,7 @@ else
   while (fgets(renglon,maxNumCaracToRead,topologia)!=NULL)
    {
      //Guardar datos del renglo origen:Destino:Costo
-     if(sscanf(renglon,"%c:%c:%d",&origen,&destino,&costo)==3)
+     if(sscanf(renglon,"%c:%c:%d",origen,destino,&costo)==3)
      {
        nodo=malloc(sizeof(DATOS));
        if(nodo==NULL)
@@ -38,14 +38,14 @@ else
          valida=3;
          validationError(valida);
          //limpiamos el nodo
-         if (*inicio != NULL)
+         if (inicio == NULL)
          {
-             nodo = *inicio;
+             nodo = inicio;
         while (nodo != NULL)
           {
-            *inicio = nodo->sig;
+            inicio = nodo->siguiente;
             free(nodo);
-            nodo = *inicio;
+            nodo = inicio;
           exit(0);
           }
          }
