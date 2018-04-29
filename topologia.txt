@@ -1,3 +1,6 @@
 terraza:cubo:1
 terraza:karpa:5
 edificioL:eificioN:3
+A:B:2
+e:v:2
+h:v:9

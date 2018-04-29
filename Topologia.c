@@ -5,7 +5,7 @@ void topologia()
 {
 
   FILE *topologia;
-  int valida=0;
+  int valida=0, c, i;
   char renglon[200];
   char or[255];
   char de[255];
@@ -13,6 +13,7 @@ void topologia()
   DATOS *inicio, *auxiliar, *nodo;
   char separador[]=":";
   char *cadena;
+  char str[60];
 
   system("clear");
   printf("\t\t\tRealizado por: Diana Laura Aviles Elizalde\n\n");
@@ -38,7 +39,7 @@ void topologia()
 	    cadena = strtok(NULL,separador);
 	  }
 	  //Guardar datos del renglo origen:Destino:Costo
-	  if(scanf(cadena,"%s %s %d",or,de,&costo)==3) //valida que ten
+	  if(scanf(cadena,"%s%*c%s%*c%d",or,de,&costo)==3) //valida que ten
 	    {
 	      nodo=malloc(sizeof(DATOS));
 	      if(nodo==NULL)
@@ -81,8 +82,7 @@ void topologia()
 	    }
 	}
       fclose(topologia);
-    }
-
+  }
   getchar();
   getchar();
 }
