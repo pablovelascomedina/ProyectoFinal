@@ -1,5 +1,6 @@
 #include "funcionesGenerales.h"
 
+
 void topologia()
 {
 
@@ -15,6 +16,7 @@ void topologia()
   printf("lee topoligia archivo\n");
 
  topologia=fopen("topologia.txt","rt");
+
 
 //Validar si existe el archivo
 if(topologia==NULL)
