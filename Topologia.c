@@ -3,21 +3,22 @@
 
 void topologia()
 {
-struct topologiatxt datos;
+
   FILE *topologia;
   int valida=0;
   char renglon[200];
-
-   datos *inicio, *auxiliar, *nodo;
+ char origen;
+ char destino;
+ int costo;
+  DATOS *inicio, *auxiliar, *nodo;
   inicio=NULL;
 
 
   system("clear");
-  printf("\t\t\tRealizado por: Diana Laura Aviles Elizalde.\n\n");
+  printf("\t\t\tRealizado por: Diana Laura Aviles Elizalde\n\n");
   printf("lee topoligia archivo\n");
 
  topologia=fopen("topologia.txt","rt");
-
 
 //Validar si existe el archivo
 if(topologia==NULL)
@@ -32,9 +33,9 @@ else
   while (fgets(renglon,maxNumCaracToRead,topologia)!=NULL)
    {
      //Guardar datos del renglo origen:Destino:Costo
-     if(sscanf(renglon,"%c:%c:%d",&datos.origen,&datos.destino,&datos.costo)==3)
+     if(sscanf(renglon,"%c:%c:%d",&origen,&destino,&costo)==3)
      {
-       nodo=malloc(sizeof(datos));
+       nodo=malloc(sizeof(DATOS));
        if(nodo==NULL)
        {
          valida=3;
@@ -52,9 +53,13 @@ else
           }
          }
     }
-    nodo->datos.origen=datos.origen;
-    nodo->datos.destino=datos.destino;
-    nodo->datos.costo=datos.costo;
+    nodo->origen=origen;
+    printf("%c\n",nodo->origen);
+    nodo->destino=destino;
+    printf("%c\n",nodo->destino);
+    nodo->costo=costo;
+    printf("%d\n",nodo->costo);
+
     nodo->siguiente=NULL;
 
     if (inicio == NULL)
