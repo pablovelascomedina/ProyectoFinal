@@ -2,6 +2,14 @@
 #include<stdlib.h>
 #include<string.h>
 
+/*Estructura para leer el archivo de topologia.txt*/
+typedef struct topologiatxt{
+    char origen;
+    char destino;
+    int costo;
+    struct topologiatxt *siguiente;
+}DATOS;
+
 int validationError(int valida);
 /*funciones topología*/
 void topologia();

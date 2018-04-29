@@ -2,6 +2,16 @@
 
 void topologia()
 {
+
+  DATOS *inicio, *auxiliar;
+  inicio=NULL;
+
+
   system("clear");
-printf("Realizado por: Diana Laura Aviles Elizalde");
+  printf("\t\t\tRealizado por: Diana Laura Aviles Elizalde\n\n");
+  printf("lee topoligia archivo\n");
+
+
+  getchar();
+  getchar();
 }
