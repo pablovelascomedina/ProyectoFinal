@@ -1,6 +1,5 @@
 #include "funcionesGenerales.h"
 
-
 void topologia()
 {
 
@@ -30,7 +29,7 @@ else
   while (fgets(renglon,maxNumCaracToRead,topologia)!=NULL)
    {
      //Guardar datos del renglo origen:Destino:Costo
-     if(sscanf(renglon,"%c:%c:%d",origen,destino,&costo)==3)
+     if(sscanf(renglon,"%c:%c:%d",&origen,&destino,&costo)==3)
      {
        nodo=malloc(sizeof(DATOS));
        if(nodo==NULL)
@@ -55,9 +54,9 @@ else
     nodo->costo=costo;
     nodo->siguiente=NULL;
 
-    if (*inicio == NULL)
+    if (inicio == NULL)
     {
-      *inicio=nodo;
+      inicio=nodo;
     }
     else
     {
