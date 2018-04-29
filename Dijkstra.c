@@ -69,7 +69,7 @@ int main(int argc, char const *argv[]) {
       printf("INGRESE UNA OPCION CORRECTA\n");
     }
 
-  } while(opcionMenu<=5);//1
+  } while(opcionMenu<=5);
 
   return 0;
 }
