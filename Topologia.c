@@ -12,7 +12,7 @@ void topologia()
 
 
   system("clear");
-  printf("\t\t\tRealizado por: Diana Laura Aviles Elizalde\n\n");
+  printf("\t\t\tRealizado por: Diana Laura Aviles Elizalde.\n\n");
   printf("lee topoligia archivo\n");
 
  topologia=fopen("topologia.txt","rt");

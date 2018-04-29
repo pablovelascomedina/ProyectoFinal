@@ -14,7 +14,7 @@ typedef struct topologiatxt{
 
 
 
-//Menu de Ayuda
+//Menu de Ayudaa 
 void menuHelp();
 
  //imprime los errores
