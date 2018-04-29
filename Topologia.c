@@ -7,8 +7,8 @@ void topologia()
   FILE *topologia;
   int valida=0;
   char renglon[200];
- char origen;
- char destino;
+ char or[255];
+ char de[255];
  int costo;
   DATOS *inicio, *auxiliar, *nodo;
   inicio=NULL;
@@ -33,7 +33,7 @@ else
   while (fgets(renglon,maxNumCaracToRead,topologia)!=NULL)
    {
      //Guardar datos del renglo origen:Destino:Costo
-     if(sscanf(renglon,"%c:%c:%d",&origen,&destino,&costo)==3)
+     if(sscanf(renglon,"%s:%s:%d",or,de,&costo)==3)
      {
        nodo=malloc(sizeof(DATOS));
        if(nodo==NULL)
@@ -53,10 +53,12 @@ else
           }
          }
     }
-    nodo->origen=origen;
-    printf("%c\n",nodo->origen);
-    nodo->destino=destino;
-    printf("%c\n",nodo->destino);
+    nodo->origen=malloc(strlen(or));
+    strcpy(nodo->origen,or);
+    printf("%s\n",nodo->origen);
+    nodo->destino=malloc(strlen(de));
+    strcpy(nodo->destino,de);
+    printf("%s\n",nodo->destino);
     nodo->costo=costo;
     printf("%d\n",nodo->costo);
 
