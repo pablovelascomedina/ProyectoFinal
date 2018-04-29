@@ -2,6 +2,9 @@
 #include<stdlib.h>
 #include<string.h>
 
+#define  maxNumCaracToRead 200
+
+
 /*Estructura para leer el archivo de topologia.txt*/
 typedef struct topologiatxt{
     char origen;
@@ -9,6 +12,7 @@ typedef struct topologiatxt{
     int costo;
     struct topologiatxt *siguiente;
 }DATOS;
+
 
 //Menu de Ayuda
 void menuHelp();
