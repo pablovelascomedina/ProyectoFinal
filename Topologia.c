@@ -3,11 +3,12 @@
 
 void topologia()
 {
-
+struct topologiatxt datos;
   FILE *topologia;
   int valida=0;
   char renglon[200];
-  DATOS *inicio, *auxiliar, *nodo;
+
+   datos *inicio, *auxiliar, *nodo;
   inicio=NULL;
 
 
@@ -31,9 +32,9 @@ else
   while (fgets(renglon,maxNumCaracToRead,topologia)!=NULL)
    {
      //Guardar datos del renglo origen:Destino:Costo
-     if(sscanf(renglon,"%c:%c:%d",&origen,&destino,&costo)==3)
+     if(sscanf(renglon,"%c:%c:%d",&datos.origen,&datos.destino,&datos.costo)==3)
      {
-       nodo=malloc(sizeof(DATOS));
+       nodo=malloc(sizeof(datos));
        if(nodo==NULL)
        {
          valida=3;
@@ -51,9 +52,9 @@ else
           }
          }
     }
-    nodo->origen=origen;
-    nodo->destino=destino;
-    nodo->costo=costo;
+    nodo->datos.origen=datos.origen;
+    nodo->datos.destino=datos.destino;
+    nodo->datos.costo=datos.costo;
     nodo->siguiente=NULL;
 
     if (inicio == NULL)

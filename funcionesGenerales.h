@@ -9,12 +9,12 @@ typedef struct topologiatxt{
     char destino;
     int costo;
     struct topologiatxt *siguiente;
-}DATOS;
+};
 
 
 
 
-//Menu de Ayudaa 
+//Menu de Ayudaa
 void menuHelp();
 
  //imprime los errores
