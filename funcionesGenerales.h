@@ -7,10 +7,10 @@
 
 /*Estructura para leer el archivo de topologia.txt*/
 typedef struct topologiatxt{
-    char *origen;
-    char *destino;
-    int costo;
-    struct topologiatxt *siguiente;
+  char *origen;
+  char *destino;
+  int costo;
+  struct topologiatxt *siguiente;
 }DATOS;
 
 
@@ -19,7 +19,7 @@ typedef struct topologiatxt{
 //Menu de Ayudaa
 void menuHelp();
 
- //imprime los errores
+//imprime los errores
 int validationError(int valida);
 
 /*funciones topología*/
