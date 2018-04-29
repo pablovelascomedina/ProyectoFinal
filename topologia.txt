@@ -1,3 +1,3 @@
-hoa:fdgdf:3
-sdfsd:dfsdfds:4
-lkvmkdflb:sdfdvdf:6
+terraza:cubo:1
+terraza:karpa:5
+edificioL:eificioN:3
